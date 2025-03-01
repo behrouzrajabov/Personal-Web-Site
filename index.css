@@ -1,0 +1,34 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+.box{
+    display: flex;
+    border: 1px solid red;
+    padding: 50px;
+    animation-name: smth;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+.box:active{
+    background-color: blueviolet;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.box:hover{
+    font-size: 35px;
+    background-color: blue;
+}
+@keyframes smth {
+    0%{
+        background-image: url(images/699-536x354.jpg);
+    }
+    10%{
+        background-image: url(images/701-536x354.jpg);
+    }
+    20%{
+        background-image: url(images/922-536x354.jpg);
+        background-repeat: no-repeat;
+    }
+}
